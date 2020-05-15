@@ -24,7 +24,7 @@ namespace DatingApp.API.Migrations
                 defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
 
             migrationBuilder.AddColumn<DateTime>(
-                name: "DateOFBIrth",
+                name: "DateOfBirth",
                 table: "Users",
                 nullable: false,
                 defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
@@ -40,7 +40,7 @@ namespace DatingApp.API.Migrations
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
-                name: "Intoduction",
+                name: "Introduction",
                 table: "Users",
                 nullable: true);
 
@@ -67,7 +67,7 @@ namespace DatingApp.API.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Url = table.Column<string>(nullable: true),
-                    Descripcion = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
                     DateAdded = table.Column<DateTime>(nullable: false),
                     IsMain = table.Column<bool>(nullable: false),
                     UserId = table.Column<int>(nullable: false)
@@ -107,7 +107,7 @@ namespace DatingApp.API.Migrations
                 table: "Users");
 
             migrationBuilder.DropColumn(
-                name: "DateOFBIrth",
+                name: "DateOfBirth",
                 table: "Users");
 
             migrationBuilder.DropColumn(
@@ -119,7 +119,7 @@ namespace DatingApp.API.Migrations
                 table: "Users");
 
             migrationBuilder.DropColumn(
-                name: "Intoduction",
+                name: "Introduction",
                 table: "Users");
 
             migrationBuilder.DropColumn(

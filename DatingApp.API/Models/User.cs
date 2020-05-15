@@ -13,7 +13,7 @@ namespace DatingApp.API.Models
 
         public byte[] PasswordSalt { get; set; }
         public string Gender { get; set; }
-        public DateTime DateOFBIrth { get; set; }
+        public DateTime DateOfBirth { get; set; }
 
         public string KnownAs { get; set; }
 
@@ -21,7 +21,7 @@ namespace DatingApp.API.Models
 
         public DateTime LastActivate { get; set; }
 
-        public string Intoduction { get; set; }
+        public string Introduction { get; set; }
 
         public string LookingFor { get; set; }
 
